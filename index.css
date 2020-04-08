@@ -82,11 +82,15 @@ body {
     border-radius: 0.5em;
 }
 
+.bxprdct:hover {
+    box-shadow: #333333 0px 0px 9px 5px; 
+}
+
 /*Imagen de producto*/
 .product {
     display: flex;
     justify-content: center;
-    height: 20em;
+    height: 17em;
 }
 
 .product img{
@@ -137,6 +141,11 @@ body {
     color: #b3f6a4;
 }
 
+.btncomprar:active {
+    background-color: #b3f6a4;
+    color: #b3f6a4;
+}
+
 .btncarrito {
     border-radius: 0.5em;
     padding-top: 0.4em;
@@ -153,4 +162,9 @@ body {
 .btncarrito:hover {
     background-color: #b3f6a4; 
     color: black;
+}
+
+.btncarrito:active {
+    background-color: #b3f6a4;
+    color: #b3f6a4;
 }
