@@ -142,7 +142,12 @@
     background-color: cadetblue;
 }
 
-
+.fb {
+    max-width: 25%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 
 
