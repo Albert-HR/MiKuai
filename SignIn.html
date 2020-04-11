@@ -4,13 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="temp.css">
-    <link rel="stylesheet" href="LogIn.css">
+    <link rel="stylesheet" href="SignIn.css">
     <link rel="icon" href="/img/logor.png" />
-    <title>MiKuai | Iniciar Sesión</title>
+    <title>MiKuai | Registrarse</title>
 </head>
 <body>
     <script src="temp.js"></script>
-    <script src="LogIn.js"></script>
 
     <!-- Title and search, menu -->
     <div class="row bar trans">
@@ -68,21 +67,31 @@
 
     </div>
 
-    <!-- Iniciar Sesíon -->
+    <!-- Registrarse -->
     <div class="cont">
 
         <div class="log">
-            <div class="title"> Ingresa tu Email y contraseña</div>
+            <div class="title"> Completa tus datos</div>
 
-            <div class="usr"> <input class="usrtxt" placeholder="Email" type="text"> </div>
+            <div class="usr usr-s"> 
+                <input class="usrtxt w-m-40 w-s-90 m-r" placeholder="Nombre" type="text"> 
+                <input class="usrtxt  w-m-40 w-s-90" placeholder="Apellido" type="text">
+            </div>
 
-            <div class="usr" id="pswrd">  </div>
-            <!-- <input class="usrtxt" placeholder="Contraseña" type="password"> -->
+            <div class="usr usr-s"> 
+                <input class="usrtxt  w-m-40 w-s-90 m-r" placeholder="Correo" type="text"> 
+                
+                <div class="pswrtxt  w-m-40 w-s-90" >
+
+                    <input placeholder="Contraseña" type="text">
+                    <button class="itrg">?</button>
+                
+                </div>
+
+            </div>
             
-            <div class="usr btnemail" id="inss"> <button onclick="password(event,this)" class="btn" href="">Continuar</button> </div>
-            
-            <div class="usr" id="cc"> <button onclick="window.location.href='/SignIn.html'" id="ccbtn" class="btn btncracta" href="SignIn.html" >Crear Cuenta</button> </div>
-            
+            <div class="usr usr-s btnemail" > <button class="btn" href="">Crear Cuenta</button> </div>
+
         </div>
 
 
