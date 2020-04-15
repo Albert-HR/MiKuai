@@ -28,7 +28,7 @@ function password(e,t){
     const btnss = document.createElement('button');
     btnss.classList.add("btn", "btncracta");
     btnss.textContent = "No sé mi contraseña";
-    btnss.style = "width: 10em;";
+    btnss.style = "width: 11em;";
 
     document.getElementById('cc').appendChild(btnss);
 
