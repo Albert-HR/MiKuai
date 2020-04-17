@@ -11,6 +11,7 @@
 </head>
 
 <body>
+    <script src="temp.js"></script>
 
     <!-- Title and search, menu -->
     <div class="row bar trans">
@@ -59,7 +60,7 @@
                 </div>
 
                 <div style="display: flex;" class="col-m-1 col-s-2">
-                    <a style="width: 100%; padding: 0;" class="btn mnbtn" href=""> <img src="img/Carrito.png" alt=""> </a>
+                    <a onclick="ShopCar(event,this)" style="width: 100%; padding: 0;" class="btn mnbtn" href=""> <img src="img/Carrito.png" alt=""> </a>
                 </div>
                 
             </div>
@@ -68,6 +69,9 @@
 
     </div>
 
+    <!-- Carrito -->
+    <div id="Cshop">
+    </div>
 
     <!-- About -->
     <div style="padding: 5em 0 10em 0;" class="contn">
@@ -95,7 +99,7 @@
                             <a class="btn btncomprar" href="">Comprar</a>
                         </div>
                         <div class="col-m-7 col-s-7 btnbox" >
-                            <a class="btn btncarrito" href="">Agregar al carrito</a>
+                            <a onclick="addCar(event,this)" class="btn btncarrito" href="">Agregar al carrito</a>
                         </div>
         
                     </div>

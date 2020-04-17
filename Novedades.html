@@ -58,13 +58,17 @@
                 </div>
 
                 <div style="display: flex;" class="col-m-1 col-s-2">
-                    <a style="width: 100%; padding: 0;" class="btn mnbtn" href=""> <img src="img/Carrito.png" alt=""> </a>
+                    <a onclick="ShopCar(event,this)" style="width: 100%; padding: 0;" class="btn mnbtn" href=""> <img src="img/Carrito.png" alt=""> </a>
                 </div>
                 
             </div>
 
         </div>
 
+    </div>
+
+    <!-- Carrito -->
+    <div id="Cshop">
     </div>
 
     
@@ -74,7 +78,7 @@
         <div style="padding: 1em;" class="w-s-100 w-m-33">
             
             <div class="bxprdct">
-                <div class = "product" > <a href=""> 
+                <div class = "product" > <a  onclick="Producto(event)" href=""> 
                 
                     <div class="new"> Nuevo </div>     
                     <img src="https://picsum.photos/id/1/400/300" alt=""> </a> 
@@ -95,7 +99,7 @@
                         <a class="btn btncomprar" href="">Comprar</a>
                     </div>
                     <div class="col-m-7 col-s-7 btnbox" >
-                        <a class="btn btncarrito" href="">Agregar al carrito</a>
+                        <a onclick="addCar(event,this)" class="btn btncarrito" href="">Agregar al carrito</a>
                     </div>
     
                 </div>
@@ -111,7 +115,7 @@
         <div style="padding: 1em;" class="w-s-100 w-m-33">
             
             <div class="bxprdct">
-                <div class = "product" > <a href=""> 
+                <div class = "product" > <a  onclick="Producto(event)" href=""> 
                 
                     <div class="new"> Nuevo </div>     
                     <img src="https://picsum.photos/id/1/400/300" alt=""> </a> 
@@ -132,7 +136,7 @@
                         <a class="btn btncomprar" href="">Comprar</a>
                     </div>
                     <div class="col-m-7 col-s-7 btnbox" >
-                        <a class="btn btncarrito" href="">Agregar al carrito</a>
+                        <a onclick="addCar(event,this)" class="btn btncarrito" href="">Agregar al carrito</a>
                     </div>
     
                 </div>
@@ -148,7 +152,7 @@
         <div style="padding: 1em;" class="w-s-100 w-m-33">
             
             <div class="bxprdct">
-                <div class = "product" > <a href=""> 
+                <div class = "product" > <a  onclick="Producto(event)" href=""> 
                 
                     <div class="new"> Nuevo </div>     
                     <img src="https://picsum.photos/id/1/400/300" alt=""> </a> 
@@ -169,7 +173,7 @@
                         <a class="btn btncomprar" href="">Comprar</a>
                     </div>
                     <div class="col-m-7 col-s-7 btnbox" >
-                        <a class="btn btncarrito" href="">Agregar al carrito</a>
+                        <a onclick="addCar(event,this)" class="btn btncarrito" href="">Agregar al carrito</a>
                     </div>
     
                 </div>
@@ -185,7 +189,7 @@
         <div style="padding: 1em;" class="w-s-100 w-m-33">
             
             <div class="bxprdct">
-                <div class = "product" > <a href=""> 
+                <div class = "product" > <a  onclick="Producto(event)" href=""> 
                 
                     <div class="new"> Nuevo </div>     
                     <img src="https://picsum.photos/id/1/400/300" alt=""> </a> 
@@ -206,7 +210,7 @@
                         <a class="btn btncomprar" href="">Comprar</a>
                     </div>
                     <div class="col-m-7 col-s-7 btnbox" >
-                        <a class="btn btncarrito" href="">Agregar al carrito</a>
+                        <a onclick="addCar(event,this)" class="btn btncarrito" href="">Agregar al carrito</a>
                     </div>
     
                 </div>
@@ -222,7 +226,7 @@
         <div style="padding: 1em;" class="w-s-100 w-m-33">
             
             <div class="bxprdct">
-                <div class = "product" > <a href=""> 
+                <div class = "product" > <a  onclick="Producto(event)" href=""> 
                 
                     <div class="new"> Nuevo </div>     
                     <img src="https://picsum.photos/id/1/400/300" alt=""> </a> 
@@ -243,7 +247,7 @@
                         <a class="btn btncomprar" href="">Comprar</a>
                     </div>
                     <div class="col-m-7 col-s-7 btnbox" >
-                        <a class="btn btncarrito" href="">Agregar al carrito</a>
+                        <a onclick="addCar(event,this)" class="btn btncarrito" href="">Agregar al carrito</a>
                     </div>
     
                 </div>
@@ -259,7 +263,7 @@
         <div style="padding: 1em;" class="w-s-100 w-m-33">
             
             <div class="bxprdct">
-                <div class = "product" > <a href=""> 
+                <div class = "product" > <a  onclick="Producto(event)" href=""> 
                 
                     <div class="new"> Nuevo </div>     
                     <img src="https://picsum.photos/id/1/400/300" alt=""> </a> 
@@ -280,7 +284,7 @@
                         <a class="btn btncomprar" href="">Comprar</a>
                     </div>
                     <div class="col-m-7 col-s-7 btnbox" >
-                        <a class="btn btncarrito" href="">Agregar al carrito</a>
+                        <a onclick="addCar(event,this)" class="btn btncarrito" href="">Agregar al carrito</a>
                     </div>
     
                 </div>
@@ -296,7 +300,7 @@
         <div style="padding: 1em;" class="w-s-100 w-m-33">
             
             <div class="bxprdct">
-                <div class = "product" > <a href=""> 
+                <div class = "product" > <a  onclick="Producto(event)" href=""> 
                 
                     <div class="new"> Nuevo </div>     
                     <img src="https://picsum.photos/id/1/400/300" alt=""> </a> 
@@ -317,13 +321,20 @@
                         <a class="btn btncomprar" href="">Comprar</a>
                     </div>
                     <div class="col-m-7 col-s-7 btnbox" >
-                        <a class="btn btncarrito" href="">Agregar al carrito</a>
+                        <a onclick="addCar(event,this)" class="btn btncarrito" href="">Agregar al carrito</a>
                     </div>
     
                 </div>
             </div>
 
         </div>
+
+
+
+
+
+
+        
 
 
 

@@ -9,6 +9,7 @@
     <title id="titleh">MiKuai</title>
 </head>
 <body onload="change()">
+    <script src="temp.js"></script>
     <script src="Categorias.js"></script>
 
     <!-- Title and search, menu -->
@@ -38,7 +39,7 @@
                 </div>
 
                 <div style="display: flex;" class="col-m-1 col-s-6">
-                    <a class="btn mnbtn" href="">Categorias</a>
+                    <a class="btn mnbtn" href="Categorias.html">Categorias</a>
                 </div>
 
                 <div style="height: 3.15em; background-color: #2e3034;" style="display: flex;" class="col-m-3">
@@ -58,7 +59,7 @@
                 </div>
 
                 <div style="display: flex;" class="col-m-1 col-s-2">
-                    <a style="width: 100%; padding: 0;" class="btn mnbtn" href=""> <img src="img/Carrito.png" alt=""> </a>
+                    <a onclick="ShopCar(event,this)" style="width: 100%; padding: 0;" class="btn mnbtn" href=""> <img src="img/Carrito.png" alt=""> </a>
                 </div>
                 
             </div>
@@ -67,13 +68,20 @@
 
     </div>
 
+    <!-- Carrito -->
+    <div id="Cshop">
+    </div>
     
     <!-- Articulos -->
     <div class="row pdconten pdconten-m" >
         
 
-        <div class="title col-m-12">
-            Articulo
+        <div style="padding-left: 0.5em; margin-top: 1em;" class="col-m-2 col-s-5">
+            <button class="btn btnatras">Atras</button>
+        </div>
+        
+        <div class="title col-m-10 col-s-7">
+                ${nom}
         </div>
 
         <div style="padding: 1em;" class="w-s-100 w-m-33">
