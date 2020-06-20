@@ -963,7 +963,7 @@ function atrasCPrdcts(e,t) {
 function searchbt(e) {
     e.preventDefault();
     src = document.getElementById('schrtx').value;
-    window.location.href = '../HTML/index.php?src=' + src;
+    window.location.href = "/HTML/index.php?src=" + src;
 }
 
 
