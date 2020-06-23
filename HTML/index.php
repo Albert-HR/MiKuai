@@ -13,6 +13,10 @@
 <body >
     <script src="../JavaScript/temp.js"></script>
     <?php 
+
+	define(‘WP_USE_THEMES’, true);
+	require('./index.php');
+
         if(array_key_exists("src", $_GET)) {
             $cont = $_GET['src'];
             if($_SERVER['REQUEST_METHOD'] === 'GET')
