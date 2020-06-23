@@ -12,19 +12,6 @@
 </head>
 <body >
     <script src="../JavaScript/temp.js"></script>
-    <?php 
-
-	define(‘WP_USE_THEMES’, true);
-	require('./index.php');
-
-        if(array_key_exists("src", $_GET)) {
-            $cont = $_GET['src'];
-            if($_SERVER['REQUEST_METHOD'] === 'GET')
-            {
-                
-            }
-        }
-    ?>
 
     <!-- Title and search, menu -->
     <div class="row bar trans">
@@ -217,7 +204,14 @@
 
     <script type="text/javascript" >
 
-        src = "<?php echo $cont; ?>";
+        src = "<?php 
+        if(array_key_exists("src", $_GET)) {
+        $cont = $_GET['src'];
+            if($_SERVER['REQUEST_METHOD'] === 'GET')
+            {
+                echo $cont;                      
+            }
+        }?>";
         const xhr = new XMLHttpRequest();
         // Generar el HTML
         let htmlPrd = ``;
