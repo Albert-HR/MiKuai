@@ -963,7 +963,7 @@ function atrasCPrdcts(e,t) {
 function searchbt(e) {
     e.preventDefault();
     src = document.getElementById('schrtx').value;
-    window.location.href = "https://romantic-leakey-5e4ce1.netlify.app/HTML/index.php?src=" + src;
+    window.location.href = 'https://romantic-leakey-5e4ce1.netlify.app/HTML/index.php?src=' + src;
 }
 
 
